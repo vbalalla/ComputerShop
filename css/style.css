@@ -48,5 +48,15 @@ form{
 }
 
 .search{
-	background-color: black;
+	background-color: #222;
 }
+
+.col{
+	padding: 20px;
+	width:50%; 
+	background-color: red;
+}
+
+#para{
+	padding-bottom: 20px;
+	}

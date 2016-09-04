@@ -16,10 +16,10 @@
 	<link rel="stylesheet" type="text/css" href="../css/style.css">
 </head>
 <body>
-<div class="container"  style="">
+<div class="container">
     
 
-    <div class="page-header" style=""  >
+    <div class="page-header">
         <h1>EASY EXCHANGE  <small>exchange computer hardware</small></h1>
         
         <b class="pull-right">Viboha Balalla | <span><a>logout</a></span></b>
@@ -27,7 +27,7 @@
 
     <!--nav bar-->
     <nav class="navbar navbar-inverse">
-        <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-home"></span></a>
+        <a class="navbar-brand" href="home.html"><span class="glyphicon glyphicon-home"></span></a>
             <div class="container-fluid">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar4">
@@ -39,7 +39,7 @@
                 </div>
                 <div id="navbar4" class="navbar-collapse collapse">
                     <ul class="nav navbar-nav">
-                        <li class="active"><a href="#">Home</a></li>
+                        <li class="active"><a href="home.html">Home</a></li>
                         <li><a href="requests.html">Exchange Requests<span class="badge">4</span></a></li>
                         <li><a href="#">About</a></li>
                         <li><a href="#">Contact</a></li>
@@ -55,14 +55,19 @@
 
     <div class="col-md-8">
 
+			<!--breadcrumb-->
         <div class="">
             <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                <li class="breadcrumb-item"><a href="home.html">Home</a></li>
             </ol>
         </div>
 			
-			<p>You can easily exchange your unwanted computer hardware parts for much desired parts. </p>
-        <button class="add col-md-12 btn btn-default" data-toggle="collapse" data-target="#demo"><span class="glyphicon glyphicon-expand pull-left"></span>Add an item for exchange&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-hand-up"></span></button>
+			<p id="para">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;You can easily exchange your unwanted computer hardware parts for much desired parts.
+			this website can use as a market place to meet exchanging parties.<b> You can add your item from the following
+			Link. </b></p>
+			
+			<!--form collapse -->
+        <button class="add col-md-12 btn btn-default" data-toggle="collapse" data-target="#demo"><span class="glyphicon glyphicon-expand pull-left"></span><b>Add an item for exchange&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-hand-up"></b></span></button>
 
         <div id="demo" class="collapse col-md-12 panel panel-default">
             <form>
@@ -117,20 +122,20 @@
             </form>
         </div>
         
-        <div style="padding:30px"></div>
+        <div style="padding:30px;"></div>
 			<div>
-				<p>Following are some suggested items for what you have to exchange</p>
+				<p><b></b></p>
 			</div>
 
 			
         <!--suggested item list-->
         <div class="col-md-12 panel panel-default">
-            <h2 style="text-align: center">Suggested Items</h2>
+            <h3 style="text-align: center"><i>Suggested Items</i></h3>
 
             <!--item-->
             <div class="item col-md-6 panel panel-default">
                 <div class="col-md-12">
-                    <h4>Exchange For: Item #1</h4>
+                    <h4><b>Exchange For: Item #1</b></h4>
                     <div class="col-md-8">
                         <ul class="list-group">
                             <li class="list-group-item">Item Name: Mouse</li>
@@ -150,28 +155,7 @@
             <!--item-->
             <div class="item col-md-6 panel panel-default">
                 <div class="col-md-12">
-                    <h4>Exchange For: Item #2</h4>
-                    <div class="col-md-8">
-                        <ul class="list-group">
-                            <li class="list-group-item">Item Name: Mouse</li>
-                            <li class="list-group-item">Item Model: Dell 404</li>
-                            <li class="list-group-item">Color: White</li>
-                        </ul>
-                    </div>
-                    <div class="col-md-4">
-                        <img src="../assets/img.jpg" class="img-responsive" style="max-width: 100%">
-                    </div>
-
-                </div>
-
-                <button class="btn btn-success col-md-12" style="text-align: center">Reqest for exchange</button>
-
-            </div>
-
-            <!--item-->
-            <div class="item col-md-6 panel panel-default">
-                <div class="col-md-12">
-                    <h4>Exchange For: Item #2</h4>
+                    <h4><b>Exchange For: Item #2</b></h4>
                     <div class="col-md-8">
                         <ul class="list-group">
                             <li class="list-group-item">Item Name: Mouse</li>
@@ -192,7 +176,28 @@
             <!--item-->
             <div class="item col-md-6 panel panel-default">
                 <div class="col-md-12">
-                    <h4>Exchange For: Item #2</h4>
+                    <h4><b>Exchange For: Item #2</b></h4>
+                    <div class="col-md-8">
+                        <ul class="list-group">
+                            <li class="list-group-item">Item Name: Mouse</li>
+                            <li class="list-group-item">Item Model: Dell 404</li>
+                            <li class="list-group-item">Color: White</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="../assets/img.jpg" class="img-responsive" style="max-width: 100%">
+                    </div>
+
+                </div>
+
+                <button class="btn btn-success col-md-12" style="text-align: center">Reqest for exchange</button>
+
+            </div>
+
+            <!--item-->
+            <div class="item col-md-6 panel panel-default">
+                <div class="col-md-12">
+                    <h4><b>Exchange For: Item #2</b></h4>
                     <div class="col-md-8">
                         <ul class="list-group">
                             <li class="list-group-item">Item Name: Mouse</li>
@@ -216,49 +221,49 @@
 
 
     <div class="col-md-4 panel panel-default">
-        <h2 style="text-align: center">My Items</h2>
+        <h3 style="text-align: center"><i>My Items</i></h3>
 
         <!--item-->
         <div class="item1 col-md-12 panel panel-default">
-            <h4>Item no: #1</h4>
+            <h4><b>Item no: #1</b></h4>
             <div class="col-md-8">
                 <ul class="list-group">
-                    <li class="list-group-item">Item Name: Mouse</li>
-                    <li class="list-group-item">Item Model: Dell 404</li>
-                    <li class="list-group-item">Color: White</li>
-                    <li class="list-group-item">Exchange for: Key Board</li>
+                    <li class="list-group-item">Item Name: keyboard</li>
+                    <li class="list-group-item">Item Model: IBM model M</li>
+                    <li class="list-group-item">Color: black</li>
+                    <li class="list-group-item">Exchange for: mouse</li>
                 </ul>
             </div>
             <div class="col-md-4">
-                <img src="../assets/img.jpg" class="img-responsive" style="max-width: 100%" width="500" height="236">
+                <img src="../assets/keyboard.jpg" class="img-responsive" style="max-width: 100%" width="500" height="236">
             </div>
         </div>
 
         <!--item-->
         <div class="item1 col-md-12 panel panel-default">
-            <h4>Item no: #2</h4>
+            <h4><b>Item no: #2</b></h4>
             <div class="col-md-8">
                 <ul class="list-group">
-                    <li class="list-group-item">Item Name: Mouse</li>
-                    <li class="list-group-item">Item Model: Dell 404</li>
-                    <li class="list-group-item">Color: White</li>
-                    <li class="list-group-item">Exchange for: Key Board</li>
+                    <li class="list-group-item">Item Name: keyboard</li>
+                    <li class="list-group-item">Item Model: IBM model M</li>
+                    <li class="list-group-item">Color: black</li>
+                    <li class="list-group-item">Exchange for: mouse</li>
                 </ul>
             </div>
             <div class="col-md-4">
-                <img src="../assets/img.jpg" class="img-responsive" style="max-width: 100%" width="500" height="236">
+                <img src="../assets/keyboard.jpg" class="img-responsive" style="max-width: 100%" width="500" height="236">
             </div>
         </div>
-
-
     </div>
-    <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
-		<div class="container">
-			<div class="navbar-text pull-left">
-				<p>EASY EXCHANGE</p>			
-			</div>		
-		</div>    
+    
+    <!--footer--> 
+    <div class="navbar navbar-inverse navbar-fixed-bottom">
+    <div class="container">
+      <p class="navbar-text pull-left">© 2016 - Site Easy Exchange
+      </p>
     </div>
+	</div>
+	
 </div>
 </body>
 </html>
