@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="../css/style.css">
+</head>
+<body>
+<div class="container"  style="">
+    
+
+    <div class="page-header" style=""  >
+        <h1>EASY EXCHANGE  <small>exchange computer hardware</small></h1>
+        
+        <b class="pull-right">Viboha Balalla | <span><a>logout</a></span></b>
+    </div>
+
+    <!--nav bar-->
+    <nav class="navbar navbar-inverse">
+        <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-home"></span></a>
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar4">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                <div id="navbar4" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#">Home</a></li>
+                        <li><a href="requests.html">Exchange Requests<span class="badge">4</span></a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+
+                    <form class="search form-inline pull-right" style="padding-top: 10px">
+                        <input class="form-control" type="text" placeholder="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+            </div>
+    </nav>
+
+    <div class="col-md-8">
+
+        <div class="">
+            <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="#">Home</a></li>
+            </ol>
+        </div>
+			
+			<p>You can easily exchange your unwanted computer hardware parts for much desired parts. </p>
+        <button class="add col-md-12 btn btn-default" data-toggle="collapse" data-target="#demo"><span class="glyphicon glyphicon-expand pull-left"></span>Add an item for exchange&nbsp;&nbsp;&nbsp;&nbsp;<span class="glyphicon glyphicon-hand-up"></span></button>
+
+        <div id="demo" class="collapse col-md-12 panel panel-default">
+            <form>
+                </select>
+                <div class="form-group">
+                    <label for="item">Item type:</label>
+                    <select class="form-control" id="item">
+                        <option>Mouse</option>
+                        <option>Key Board</option>
+                        <option>Monitor</option>
+                        <option>Ram</option>
+                        <option>VGA Card</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="model">Model:</label>
+                    <input type="text" class="form-control" id="model">
+                </div>
+                <div class="form-group">
+                    <label for="color">Colour:</label>
+                    <input type="color" class="form-control" id="color">
+                </div>
+                <div class="form-group">
+                    <label for="exchangeFor">Exchange for:</label>
+                    <select class="form-control" id="exchangeFor">
+                        <option>Mouse</option>
+                        <option>Key Board</option>
+                        <option>Monitor</option>
+                        <option>Ram</option>
+                        <option>VGA Card</option>
+                    </select>
+                </div>
+                <label>Contact details</label>
+                <div class="form-group">
+                    <label for="email">email:</label>
+                    <input type="email" class="form-control" id="email">
+                    <label for="contactNo">Contact No:</label>
+                    <input type="tel" class="form-control" id="contactNo">
+                </div>
+
+                <div class="form-group">
+                    <label>Add images: </label>
+                    <label class="btn btn-default btn-file">
+                        Browse <input class="bg-primary" type="file" style="display: none;">
+                    </label>
+                </div>
+
+                <div class="form-group" style="padding-bottom: 20px">
+                    <button type="submit" class="col-md-6 btn btn-success pull-right">Add Item</button>
+                </div>
+
+            </form>
+        </div>
+        
+        <div style="padding:30px"></div>
+			<div>
+				<p>Following are some suggested items for what you have to exchange</p>
+			</div>
+
+			
+        <!--suggested item list-->
+        <div class="col-md-12 panel panel-default">
+            <h2 style="text-align: center">Suggested Items</h2>
+
+            <!--item-->
+            <div class="item col-md-6 panel panel-default">
+                <div class="col-md-12">
+                    <h4>Exchange For: Item #1</h4>
+                    <div class="col-md-8">
+                        <ul class="list-group">
+                            <li class="list-group-item">Item Name: Mouse</li>
+                            <li class="list-group-item">Item Model: Dell 404</li>
+                            <li class="list-group-item">Color: White</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="../assets/img.jpg" class="img-responsive" style="max-width: 100%">
+                    </div>
+
+                </div>
+
+                <button class="btn btn-success col-md-12" style="text-align: center">Reqest for exchange</button>
+
+            </div>
+            <!--item-->
+            <div class="item col-md-6 panel panel-default">
+                <div class="col-md-12">
+                    <h4>Exchange For: Item #2</h4>
+                    <div class="col-md-8">
+                        <ul class="list-group">
+                            <li class="list-group-item">Item Name: Mouse</li>
+                            <li class="list-group-item">Item Model: Dell 404</li>
+                            <li class="list-group-item">Color: White</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="../assets/img.jpg" class="img-responsive" style="max-width: 100%">
+                    </div>
+
+                </div>
+
+                <button class="btn btn-success col-md-12" style="text-align: center">Reqest for exchange</button>
+
+            </div>
+
+            <!--item-->
+            <div class="item col-md-6 panel panel-default">
+                <div class="col-md-12">
+                    <h4>Exchange For: Item #2</h4>
+                    <div class="col-md-8">
+                        <ul class="list-group">
+                            <li class="list-group-item">Item Name: Mouse</li>
+                            <li class="list-group-item">Item Model: Dell 404</li>
+                            <li class="list-group-item">Color: White</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="../assets/img.jpg" class="img-responsive" style="max-width: 100%">
+                    </div>
+
+                </div>
+
+                <button class="btn btn-success col-md-12" style="text-align: center">Reqest for exchange</button>
+
+            </div>
+
+            <!--item-->
+            <div class="item col-md-6 panel panel-default">
+                <div class="col-md-12">
+                    <h4>Exchange For: Item #2</h4>
+                    <div class="col-md-8">
+                        <ul class="list-group">
+                            <li class="list-group-item">Item Name: Mouse</li>
+                            <li class="list-group-item">Item Model: Dell 404</li>
+                            <li class="list-group-item">Color: White</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4">
+                        <img src="../assets/img.jpg" class="img-responsive" style="max-width: 100%">
+                    </div>
+
+                </div>
+
+                <button class="btn btn-success col-md-12" style="text-align: center">Reqest for exchange</button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="col-md-4 panel panel-default">
+        <h2 style="text-align: center">My Items</h2>
+
+        <!--item-->
+        <div class="item1 col-md-12 panel panel-default">
+            <h4>Item no: #1</h4>
+            <div class="col-md-8">
+                <ul class="list-group">
+                    <li class="list-group-item">Item Name: Mouse</li>
+                    <li class="list-group-item">Item Model: Dell 404</li>
+                    <li class="list-group-item">Color: White</li>
+                    <li class="list-group-item">Exchange for: Key Board</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <img src="../assets/img.jpg" class="img-responsive" style="max-width: 100%" width="500" height="236">
+            </div>
+        </div>
+
+        <!--item-->
+        <div class="item1 col-md-12 panel panel-default">
+            <h4>Item no: #2</h4>
+            <div class="col-md-8">
+                <ul class="list-group">
+                    <li class="list-group-item">Item Name: Mouse</li>
+                    <li class="list-group-item">Item Model: Dell 404</li>
+                    <li class="list-group-item">Color: White</li>
+                    <li class="list-group-item">Exchange for: Key Board</li>
+                </ul>
+            </div>
+            <div class="col-md-4">
+                <img src="../assets/img.jpg" class="img-responsive" style="max-width: 100%" width="500" height="236">
+            </div>
+        </div>
+
+
+    </div>
+    <div class="navbar navbar-inverse navbar-fixed-bottom" role="navigation">
+		<div class="container">
+			<div class="navbar-text pull-left">
+				<p>EASY EXCHANGE</p>			
+			</div>		
+		</div>    
+    </div>
+</div>
+</body>
+</html>

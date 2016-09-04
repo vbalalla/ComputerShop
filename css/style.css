@@ -1,0 +1,52 @@
+.page-header{
+	background: url('../assets/pic2.jpg') no-repeat ;
+	background-size: 1140px 160px; 
+	padding-top:50px; 
+	padding-bottom:40px; 
+	padding-left:80px
+}
+
+.item{
+	padding-bottom:20px;
+	background-color: #E8F8D3;
+}
+
+.item1{
+	background-color: #E8F8D3;
+}
+
+body{
+	background-color: #f5ffd7;
+	padding-bottom: 70px;
+}
+
+.breadcrumb{
+	background-color: #f5ffd7;
+}
+
+.list-group-item{
+	background-color: #E8F8D3;
+	border-color: black;
+}
+
+#demo{
+	padding-bottom: 10px;
+	padding-top: 20px;
+	background-color: #E8F8D3;
+}
+
+.add{
+	background-color: #D9FD9B;
+}
+
+b{
+	padding-right: 10px;
+}
+
+form{
+	background-color: #E8F8D3;
+}
+
+.search{
+	background-color: black;
+}
