@@ -1,42 +1,43 @@
 .page-header{
-	background: url('../assets/pic2.jpg') no-repeat ;
+	background: url('../assets/pic2.png') no-repeat ;
 	background-size: 1140px 160px; 
 	padding-top:50px; 
 	padding-bottom:40px; 
-	padding-left:80px
+	padding-left:80px;
+	color: white;
 }
 
 .item{
 	padding-bottom:20px;
-	background-color: #E8F8D3;
+	background-color: white;
 }
 
 .item1{
-	background-color: #E8F8D3;
+	background-color: white;
 }
 
 body{
-	background-color: #f5ffd7;
+	background-color: #EBF6FA;
 	padding-bottom: 70px;
 }
 
 .breadcrumb{
-	background-color: #f5ffd7;
+	background-color: #adcfde;
 }
 
 .list-group-item{
-	background-color: #E8F8D3;
+	background-color: white;
 	border-color: black;
 }
 
 #demo{
 	padding-bottom: 10px;
 	padding-top: 20px;
-	background-color: #E8F8D3;
+	background-color: #adcfde;
 }
 
 .add{
-	background-color: #D9FD9B;
+
 }
 
 b{
@@ -44,7 +45,7 @@ b{
 }
 
 form{
-	background-color: #E8F8D3;
+	background-color: #adcfde;
 }
 
 .search{
@@ -60,3 +61,19 @@ form{
 #para{
 	padding-bottom: 20px;
 	}
+
+.pbody{
+	background-color: #adcfde;
+}
+
+.lst-grp{
+	text-align: center;
+}
+
+.lst-grp-bod{
+	padding-top: 80px;
+}
+
+.bt{
+	text-align: center;
+}

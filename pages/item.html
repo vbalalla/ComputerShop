@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>item 1</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+
+    <!-- Latest compiled JavaScript -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    <script src="../js/gallery.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/gallery.css">
+</head>
+<body>
+<div class="container">
+
+
+    <div class="page-header">
+        <h1>EASY EXCHANGE  <small>exchange computer hardware</small></h1>
+
+        <b class="pull-right">Viboha Balalla | <span><a>logout</a></span></b>
+    </div>
+
+    <!--nav bar-->
+    <nav class="navbar navbar-inverse">
+        <a class="navbar-brand" href="home.html"><span class="glyphicon glyphicon-home"></span></a>
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar4">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div id="navbar4" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="home.html">Home</a></li>
+                    <li class="active"><a href="requests.html">Exchange Requests<span class="badge">4</span></a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+
+                <form class="search form-inline pull-right" style="padding-top: 10px">
+                    <input class="form-control" type="text" placeholder="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+<!--gallery-->
+        <div class="col-md-8 container">
+
+            <div class="col-md-12">
+                <ul class="pager pull-left">
+                    <li><a href="requests.html"><span class="glyphicon glyphicon-arrow-left"></span> Back</a></li>
+                </ul>
+            </div>
+            <div id="main_area">
+                <!-- Slider -->
+                <div class="row">
+                    <div class="col-sm-6" id="slider-thumbs">
+                        <!-- Bottom switcher of slider -->
+                        <ul class="hide-bullets">
+                            <li class="col-sm-3">
+                                <a class="thumbnail" id="carousel-selector-0">
+                                    <img src="http://placehold.it/150x150&text=zero">
+                                </a>
+                            </li>
+
+                            <li class="col-sm-3">
+                                <a class="thumbnail" id="carousel-selector-1"><img src="http://placehold.it/150x150&text=1"></a>
+                            </li>
+
+                            <li class="col-sm-3">
+                                <a class="thumbnail" id="carousel-selector-2"><img src="http://placehold.it/150x150&text=2"></a>
+                            </li>
+
+                            <li class="col-sm-3">
+                                <a class="thumbnail" id="carousel-selector-3"><img src="http://placehold.it/150x150&text=3"></a>
+                            </li>
+
+                            <li class="col-sm-3">
+                                <a class="thumbnail" id="carousel-selector-4"><img src="http://placehold.it/150x150&text=4"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-sm-6">
+                        <div class="col-xs-12" id="slider">
+                            <!-- Top part of the slider -->
+                            <div class="row">
+                                <div class="col-sm-12" id="carousel-bounding-box">
+                                    <div class="carousel slide" id="myCarousel">
+                                        <!-- Carousel items -->
+                                        <div class="carousel-inner">
+                                            <div class="active item" data-slide-number="0">
+                                                <img src="http://placehold.it/470x480&text=zero"></div>
+
+                                            <div class="item" data-slide-number="1">
+                                                <img src="http://placehold.it/470x480&text=1"></div>
+
+                                            <div class="item" data-slide-number="2">
+                                                <img src="http://placehold.it/470x480&text=2"></div>
+
+                                            <div class="item" data-slide-number="3">
+                                                <img src="http://placehold.it/470x480&text=3"></div>
+
+                                            <div class="item" data-slide-number="4">
+                                                <img src="http://placehold.it/470x480&text=4"></div>
+
+                                        </div>
+                                        <!-- Carousel nav -->
+                                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                            <span class="glyphicon glyphicon-chevron-left"></span>
+                                        </a>
+                                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                            <span class="glyphicon glyphicon-chevron-right"></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/Slider-->
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <ul class="lst-grp-bod list-group">
+                <li class="lst-grp list-group-item"><h3><b>Keyboard</b></h3></li>
+                <li class="lst-grp list-group-item"><h4><b>IBM model M</b></h4></li>
+                <li class="lst-grp list-group-item">Color: White</li>
+                <li class="lst-grp list-group-item">Contact No: 0712929393</li>
+                <li class="lst-grp list-group-item">Email Address: dkdfk@gmail.com</li>
+            </ul>
+            <button class="btn btn-success pull-right" data-toggle="modal" data-target="#myModal" >Confirm Exchange</button>
+
+        </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Massage</h4>
+                </div>
+                <div class="modal-body">
+                    <p>Exchange has been confirmed</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+    <!--footer-->
+    <div class="navbar navbar-inverse navbar-fixed-bottom">
+        <div class="container">
+            <p class="navbar-text pull-left">© 2016 - Site Easy Exchange
+            </p>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
