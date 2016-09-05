@@ -10,6 +10,7 @@
 .item{
 	padding-bottom:20px;
 	background-color: white;
+	width: 48%;
 }
 
 .item1{
@@ -34,6 +35,7 @@ body{
 	padding-bottom: 10px;
 	padding-top: 20px;
 	background-color: #adcfde;
+	border-color: blue;
 }
 
 .add{
@@ -76,4 +78,8 @@ form{
 
 .bt{
 	text-align: center;
+}
+
+.table-bordered {
+	border: 2px solid blue;
 }
