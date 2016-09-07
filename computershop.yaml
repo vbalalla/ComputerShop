@@ -1,0 +1,136 @@
+swagger: "2.0"
+info: 
+ version: "1.0.0"
+ title: "Computer Shop"
+ description: "A simple api for rest calls to Computer Shop's server"
+ contact: 
+   name: "Vibodha Balalla"
+   email: "vbalalla@gmail.com"
+host: "patient-sunset-1930.getsandbox.com" 
+schemes: 
+ - "https"
+consumes: 
+ - "application/json"
+produces: 
+ - "application/json"
+paths: 
+ /computershop:
+   get:
+     description: "Get all items and details" 
+     operationId: "Get all"
+     produces:
+       - application/json
+     responses:
+       200:
+         description: "All items"
+         schema:
+           type: array
+           items:
+             $ref: '#/definitions/item'
+       default:
+         description: "unexpected error"
+         
+       
+ /computershop/itemdetails/{id}: 
+   get: 
+     description: "Get item detail by id"
+     operationId: "getItemDetail"
+     produces: 
+       - application/json
+     parameters: 
+       - name: id
+         in: path
+         description: "item id"
+         required: true
+         type: integer
+         format: int32
+     responses: 
+       204: 
+         description: "Item is deleted"
+       default: 
+         description: "unexpected error"
+   delete: 
+     description: "Get item detail by id"
+     operationId: "deleteitembyid"
+     produces: 
+       - "application/json"
+     parameters: 
+       - name: id
+         in: path
+         description: "item id"
+         required: true
+         type: integer
+         format: int32
+     responses: 
+       200: 
+         description: "Item details response for a id"
+         schema:
+           $ref: '#/definitions/item'
+       default: 
+         description: "unexpected error"      
+    
+ /computershop/exchangeableitems/{itemname}: 
+   get: 
+     description: "Get items and details by name"
+     operationId: "exchangeableitems"
+     produces: 
+       - "application/json"
+     parameters: 
+       - name: itemname
+         in: path
+         description: item name
+         required: true
+         type: string
+     responses: 
+       200: 
+         description: "Item details response"
+         schema:
+           type: array
+           items:
+             $ref: '#/definitions/item'
+       default: 
+         description: "unexpected error"
+ /computershop/additem:
+   post:
+      description: Create a new item
+      operationId: additem
+      produces:
+        - application/json
+      parameters:
+        - name: item
+          in: body
+          description: item to add to exchange
+          required: true
+          schema:
+            $ref: '#/definitions/item'
+      responses:
+        '200':
+          description: item store response
+          schema:
+            $ref: '#/definitions/item'
+        default:
+          description: unexpected error
+          
+definitions:
+  item:
+    type: object
+    required:
+      - id
+      - itemname
+      - model
+      - ownerid
+    properties:
+      id:
+        type: integer
+        format: int64
+      itemname:
+        type: string
+      model:
+        type: string
+      ownerid:
+        type: integer
+        format: int64
+      tag:
+        type: string
+  
+

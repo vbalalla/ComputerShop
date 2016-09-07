@@ -1,0 +1,72 @@
+swagger: "2.0"
+info: 
+ version: "1.0.0"
+ title: "Computer Shop"
+ description: "A simple api for rest calls to Computer Shop's server"
+ termsOfService: "http://helloreverb.com/terms/"
+ contact: 
+   name: "Vibodha Balalla"
+   email: "vbalalla@gmail.com"
+host: "summer-surf-3468.getsandbox.com" 
+schemes: 
+ - "https"
+consumes: 
+ - "application/json"
+produces: 
+ - "application/json"
+paths: 
+ /itemdetails:
+  get:
+    description: Returns all pets from the system that the user has access to
+    produces:
+    - application/json
+    responses:
+      '200':
+        description: A list of pets.
+        schema:
+          type: array
+          items:
+            $ref: '#/definitions/item'
+  post:
+      description: Create a new item
+      operationId: additem
+      produces:
+        - application/json
+      parameters:
+        - name: item
+          in: body
+          description: item to add to exchange
+          required: true
+          schema:
+            $ref: '#/definitions/item'
+      responses:
+        '200':
+          description: item store response
+          schema:
+            $ref: '#/definitions/item'
+        default:
+          description: unexpected error
+        
+definitions:
+  item:
+    type: object
+    required:
+      - id
+      - name
+      - model
+      - ownerid
+    properties:
+      id:
+        type: integer
+        format: int64
+      name:
+        type: string
+      model:
+        type: string
+      ownerid:
+        type: integer
+        format: int64
+      tag:
+        type: string
+  
+

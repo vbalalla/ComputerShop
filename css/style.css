@@ -82,4 +82,11 @@ form{
 
 .table-bordered {
 	border: 2px solid blue;
+	background-color: white;
+}
+
+.logincon {
+	background-color: #adcfde;
+	padding-top: 30px;
+	padding-bottom: 30px;
 }
